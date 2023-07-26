@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply scroll-smooth;
+}
+
+
+body {
+  @apply font-sans min-h-screen text-foreground bg-background;
+}
+
+span, p {
+  @apply text-secundary-foreground;
+}
