@@ -14,6 +14,8 @@ module.exports = {
 
       textColor: {
         black: "#0f172A",
+        white: "#FFFEFE",
+        gray: "#9fa2aa",
         foreground: "#0f172A",
         "secundary-foreground": "#3f4555",
       },
@@ -23,6 +25,8 @@ module.exports = {
 
         background: "#FFFFFF",
         secundary: "#EBEBEB",
+
+        dark: "#282A36",
       },
     },
   },

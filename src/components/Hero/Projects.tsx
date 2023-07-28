@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const Projects = React.forwardRef((props, ref) => {
+const Projects = React.forwardRef((_props, _ref) => {
   const projects = [
     { title: "Alice", description: "ChatGPT com interface customizada", img: "/user.jpg", url: "" },
     { title: "Alice", description: "ChatGPT com interface customizada", img: "/user.jpg", url: "" },
@@ -19,7 +19,9 @@ const Projects = React.forwardRef((props, ref) => {
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="h-1 w-16 bg-primary mx-auto"></div>
+
+      <div className="max-w-4xl mx-auto text-center pt-8">
         <p className="font-medium"> Alguns trabalhos e projetos que já realizei </p>
       </div>
 
