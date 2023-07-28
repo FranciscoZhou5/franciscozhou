@@ -15,7 +15,7 @@ const Projects = React.forwardRef((_props, _ref) => {
       <div className="w-full relative justify-center inline-flex pb-2">
         <div className="max-w-lg relative w-full text-center flex justify-center items-center h-full">
           <h2 className="w-full text-5xl md:text-7xl font-extrabold opacity-20 uppercase -z-0 select-none">PORTFOLIO</h2>
-          <span className="text-2xl absolute font-bold text-foreground"> Projetos </span>
+          <span className="text-3xl absolute font-bold text-foreground"> Projetos </span>
         </div>
       </div>
 

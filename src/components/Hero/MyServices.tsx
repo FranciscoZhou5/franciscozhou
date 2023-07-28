@@ -20,7 +20,7 @@ export default function MyServices() {
     <section className="py-24 bg-[#282a36]">
       <div className="w-full relative items-center inline-flex flex-col pb-2 space-y-4">
         <div className="max-w-lg relative w-full text-center flex justify-center items-center h-full">
-          <h2 className="w-full text-5xl md:text-7xl font-extrabold opacity-20 uppercase -z-0 select-none text-gray">SERVIÇOS</h2>
+          <h2 className="w-full text-[56px] md:text-7xl font-extrabold opacity-20 uppercase -z-0 select-none text-gray">SERVIÇOS</h2>
           <span className="text-lg md:text-2xl absolute font-bold text-white"> O que eu posso te oferecer? </span>
         </div>
 
