@@ -1,9 +1,9 @@
 "use client";
 
-import { useForm, ValidationError } from "@formspree/react";
-import { ChangeEvent, FormEvent, useState } from "react";
+import { useForm } from "@formspree/react";
+import React, { ChangeEvent, useState } from "react";
 
-export default function Contact() {
+const Contact = React.forwardRef<HTMLElement>((props, ref) => {
   const [state, handleSubmit] = useForm("mrgwegww");
 
   const [inputs, setInputs] = useState({
@@ -21,7 +21,7 @@ export default function Contact() {
   }
 
   return (
-    <section className="py-24 bg-dark">
+    <section className="py-24 bg-dark" ref={ref}>
       <div className="w-full relative justify-center inline-flex pb-2">
         <div className="max-w-lg relative w-full text-center flex flex-col justify-center items-center h-full">
           <span className="text-primary font-bold text-lg">Contato</span>
@@ -98,4 +98,8 @@ export default function Contact() {
       </div>
     </section>
   );
-}
+});
+
+Contact.displayName = "Contact";
+
+export default Contact;

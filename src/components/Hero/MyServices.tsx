@@ -2,7 +2,11 @@ import { Globe, Layout, PenTool, Smartphone } from "lucide-react";
 
 export default function MyServices() {
   const services = [
-    { title: "Aplicação Web", description: "Criação de sistemas web, responsivos, funcionais e otimizados.", Icon: Layout },
+    {
+      title: "Aplicação Web",
+      description: "Criação de sistemas web, responsivos, funcionais e otimizados.",
+      Icon: Layout,
+    },
     {
       title: "UI/UX Design",
       description:
@@ -18,16 +22,21 @@ export default function MyServices() {
 
   return (
     <section className="py-24 bg-[#282a36]">
-      <div className="w-full relative items-center inline-flex flex-col pb-2 space-y-4">
+      <div className="w-full relative items-center inline-flex flex-col pb-2 space-y-4 px-4">
         <div className="max-w-lg relative w-full text-center flex justify-center items-center h-full">
-          <h2 className="w-full text-[56px] md:text-7xl font-extrabold opacity-20 uppercase -z-0 select-none text-gray">SERVIÇOS</h2>
-          <span className="text-lg md:text-2xl absolute font-bold text-white"> O que eu posso te oferecer? </span>
+          <h2 className="w-full text-[56px] md:text-7xl font-extrabold opacity-20 uppercase -z-0 select-none text-gray">
+            SERVIÇOS
+          </h2>
+          <span className="text-lg md:text-2xl absolute font-bold text-white">
+            O que eu te ofereço?
+          </span>
         </div>
 
         <div className="h-1 w-16 bg-primary mx-auto"></div>
 
         <p className="text-gray font-medium text-center text-sm md:text-base max-w-2xl mx-auto pt-4">
-          Uma simples landing page, um aplicativo multiplataforma ou até mesmo um sistema para sua loja virtual? É comigo!
+          Uma simples landing page, um aplicativo multiplataforma ou até mesmo um sistema para sua
+          loja virtual? É comigo!
         </p>
       </div>
 

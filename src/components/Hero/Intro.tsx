@@ -88,31 +88,43 @@ linear-gradient(45deg, #535beb, #4c0bae)`,
 
 interface IIntroProps {
   aboutMeRef: RefObject<HTMLElement>;
+  contactRef: RefObject<HTMLElement>;
 }
 
-export default function Intro({ aboutMeRef }: IIntroProps) {
+export default function Intro({ aboutMeRef, contactRef }: IIntroProps) {
   return (
     <section className="flex items-center h-screen relative" style={bg}>
       <div className="relative items-center w-full gap-12 p-8 mx-auto lg:inline-flex lg:p-20 max-w-7xl rounded-3xl">
         <div className="max-w-xl mx-auto text-center">
           <div>
             <span className="inline-flex items-center">
-              <span className="px-6 py-2 text-base font-bold text-white rounded-lg bg-white/10">Francisco Zhou</span>
+              <span className="px-6 py-2 text-base font-bold text-white rounded-lg bg-white/10">
+                Francisco Zhou
+              </span>
             </span>
-            <p className="mt-8 text-6xl font-extrabold tracking-tight text-white">Design & Develop</p>
+            <p className="mt-8 text-6xl font-extrabold tracking-tight text-white">
+              Design & Develop
+            </p>
 
             <p className="max-w-xl mt-4 text-lg lg:text-xl text-slate-200">
               Design refinado e desenvolvimento frontend de alto nível, em perfeita harmonia.
             </p>
           </div>
           <div className="flex flex-col justify-center gap-3 mt-10 sm:flex-row">
-            <button className="duration-200 bg-white/20 border-2 hover:border-indigo-700/40 border-white/30 flex-none font-medium inline-flex justify-center lg:ml-4 outline-2 outline-offset-2 px-6 py-2.5 relative rounded-xl text-white">
+            <button
+              onClick={() =>
+                contactRef.current?.scrollIntoView({ behavior: "smooth", block: "center" })
+              }
+              className="duration-200 bg-white/20 border-2 hover:border-indigo-700/40 border-white/30 flex-none font-medium inline-flex justify-center lg:ml-4 outline-2 outline-offset-2 px-6 py-2.5 relative rounded-xl text-white"
+            >
               <span className="text-white">Entrar em contato</span>
             </button>
 
             <div className="inline-flex">
               <button
-                onClick={() => aboutMeRef.current?.scrollIntoView({ behavior: "smooth", block: "center" })}
+                onClick={() =>
+                  aboutMeRef.current?.scrollIntoView({ behavior: "smooth", block: "center" })
+                }
                 className="active:bg-slate-600 w-full duration-200 active:text-white/80 before:transition-colors bg-white flex-none font-medium hover:bg-indigo-900 hover:text-white inline-flex justify-center items-center lg:ml-4 outline-2 outline-offset-2 px-6 py-2.5 relative rounded-xl text-indigo-500"
               >
                 Saiba mais

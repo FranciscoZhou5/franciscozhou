@@ -11,10 +11,11 @@ import Footer from "./Footer";
 
 export default function Hero() {
   const aboutMeRef = useRef<HTMLElement>(null);
+  const contactRef = useRef<HTMLElement>(null);
 
   return (
     <>
-      <Intro aboutMeRef={aboutMeRef} />
+      <Intro aboutMeRef={aboutMeRef} contactRef={contactRef} />
 
       <AboutMe ref={aboutMeRef} />
 
@@ -24,7 +25,7 @@ export default function Hero() {
 
       <div className="w-full h-[1px] bg-[#3e3f4a]"></div>
 
-      <Contact />
+      <Contact ref={contactRef} />
 
       <Footer />
     </>
