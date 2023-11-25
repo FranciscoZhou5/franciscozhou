@@ -11,6 +11,7 @@ export const metadata = {
     description: "Desenvolvedor Front-end e Designer UI/UX",
     type: "website",
   },
+  metadataBase: new URL("https://franciscozhou.vercel.app/"),
 };
 
 const inter = Inter({

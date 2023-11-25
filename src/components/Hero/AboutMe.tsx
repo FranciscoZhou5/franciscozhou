@@ -18,8 +18,13 @@ const AboutMe = React.forwardRef<HTMLElement>((props, ref) => {
       <div>
         <div className="w-full relative justify-center inline-flex pb-2">
           <div className="max-w-lg relative w-full text-center flex justify-center items-center h-full">
-            <h2 className="w-full text-5xl md:text-7xl font-extrabold opacity-20 uppercase -z-0 select-none">Sobre mim</h2>
-            <span className="text-2xl absolute font-bold text-foreground"> Um pouco sobre mim </span>
+            <h2 className="w-full text-5xl md:text-7xl font-extrabold opacity-20 uppercase -z-0 select-none">
+              Sobre mim
+            </h2>
+            <span className="text-2xl absolute font-bold text-foreground">
+              {" "}
+              Um pouco sobre mim{" "}
+            </span>
           </div>
         </div>
 
@@ -35,11 +40,13 @@ const AboutMe = React.forwardRef<HTMLElement>((props, ref) => {
 
             <div>
               <p className="max-w-lg lg:max-w-2xl text-sm font-medium lg:text-base text-center md:text-left">
-                Estou na área já há quase {new Date().getUTCFullYear() - 2019} anos, atuando como desenvolvedor front-end. Aprendi a
-                programar com meus 12 anos para brincar mas percebi que podia usar as minhas habilidades para{" "}
+                Estou na área já há quase {new Date().getUTCFullYear() - 2019} anos, atuando como
+                desenvolvedor front-end. Aprendi a programar desde os meus 12 anos para brincar, mas
+                percebi que podia usar as minhas habilidades para{" "}
                 <span className="underline decoration-2 decoration-primary">conectar</span>,{" "}
                 <span className="underline decoration-2 decoration-primary">ajudar</span> ou{" "}
-                <span className="underline decoration-2 decoration-primary">influenciar</span> as pessoas por meio das linhas de código.
+                <span className="underline decoration-2 decoration-primary">influenciar</span> as
+                pessoas por meio das linhas de código.
               </p>
             </div>
           </div>
